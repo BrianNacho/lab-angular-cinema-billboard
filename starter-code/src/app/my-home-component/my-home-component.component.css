@@ -1,0 +1,21 @@
+* {
+  color: darkslategray
+}
+img {
+  width: 11vw;
+  height: 15vw;
+}
+
+li {
+  list-style-type: none;
+  margin: 1vw;
+  text-align: center;
+}
+
+li img {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+
+

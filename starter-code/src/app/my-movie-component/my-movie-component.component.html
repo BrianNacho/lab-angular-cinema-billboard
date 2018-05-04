@@ -1,0 +1,42 @@
+<div>
+  <h4>Room {{movieInfo?.room}} - {{movieInfo?.title}}</h4>
+  <div class="row">
+    <img class="col-md-5" src="{{movieInfo?.poster}}" />
+    <div class="col-md-5">
+      <div class="row">      
+        <p class="col-md-4"><b>Genres</b></p>
+        <ul class="col-md-4">
+          <li *ngFor="let oneGenre of movieInfo.genres">{{oneGenre}}</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="col-md-4"><b>Year</b></p>
+        <ul class="col-md-4">
+          <li>{{movieInfo.year}}</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="col-md-4"><b>Director</b></p>
+        <ul class="col-md-4">
+          <li>{{movieInfo.director}}</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="col-md-4"><b>Actors</b></p>
+        <ul class="col-md-4">
+          <li *ngFor="let oneActor of movieInfo.actors">{{oneActor}}</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="col-md-4"><b>Schedule</b></p>
+        <ul class="col-md-4">
+          <li *ngFor="let oneTime of movieInfo.hours">{{oneTime}}</li>
+        </ul>
+      </div>
+      <div>
+        <p><b>Synopsis</b></p>
+        <p>{{movieInfo?.synopsis}}</p>
+      </div>
+    </div>
+  </div>
+</div>

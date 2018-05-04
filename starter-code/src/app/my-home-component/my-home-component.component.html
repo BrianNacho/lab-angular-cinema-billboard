@@ -1,0 +1,7 @@
+<ul class="row">
+  <li *ngFor="let oneMovie of movieTruc.movies" class="col-md-2">
+    <h3>Room {{oneMovie.room}}</h3>
+    <img [src]="oneMovie.poster">
+    <a routerLink="/movie/{{oneMovie.id}}"><p>{{oneMovie.title}}</p></a>
+  </li>
+</ul>
